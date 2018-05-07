@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane minHeight="282.0" minWidth="300.0" prefHeight="554.0" prefWidth="667.0" style="-fx-background-color: #000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane layoutX="93.0" layoutY="147.0" prefHeight="127.0" prefWidth="482.0">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="127.0" layoutX="14.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logos/possivellogo2.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffd400" layoutX="154.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portal Auto center">
+               <font>
+                  <Font name="Century Gothic Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="105.0" layoutY="262.0" prefHeight="146.0" prefWidth="450.0" style="-fx-background-color: #fff;">
+         <children>
+            <TextField layoutX="37.0" layoutY="14.0" prefHeight="25.0" prefWidth="240.0" promptText="Usuario" />
+            <TextField layoutX="37.0" layoutY="56.0" prefHeight="25.0" prefWidth="240.0" promptText="Senha" />
+            <Button layoutX="253.0" layoutY="107.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-border-radius: 5;" text="Entrar" textFill="#ffd400" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
