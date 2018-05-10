@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane minHeight="800.0" minWidth="661.0" style="-fx-background-color: red;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="661.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar layoutX="-7.0" layoutY="2.0" prefHeight="25.0" prefWidth="671.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastro" />
+                <Menu mnemonicParsing="false" text="Consulta" />
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
