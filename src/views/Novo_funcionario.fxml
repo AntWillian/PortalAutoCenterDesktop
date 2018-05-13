@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="479.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="479.0" prefWidth="499.0">
+      <children>
+        <Text layoutX="227.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo funcionario" />
+        <Text layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nome" />
+        <TextField layoutX="61.0" layoutY="87.0" prefWidth="200.0" />
+        <Text layoutX="20.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de nascimento" />
+        <TextField layoutX="134.0" layoutY="116.0" prefWidth="200.0" />
+        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cpf" />
+        <Text layoutX="20.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="usuario" />
+        <Text layoutX="273.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+        <Text layoutX="18.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="salario" />
+        <Text layoutX="25.0" layoutY="303.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" />
+        <Text layoutX="20.0" layoutY="264.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargo" />
+        <Text layoutX="23.0" layoutY="334.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Setor" />
+        <Text layoutX="16.0" layoutY="366.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de admisao" />
+        <Text layoutX="20.0" layoutY="396.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero carteira de trabalho" />
+        <Text layoutX="20.0" layoutY="423.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+        <Text layoutX="14.0" layoutY="455.0" scaleX="1.0" scaleY="0.9999923518164453" strokeType="OUTSIDE" strokeWidth="0.0" text="Nivel de usuario" />
+        <TextField layoutX="38.0" layoutY="141.0" prefWidth="200.0" />
+        <TextField layoutX="61.0" layoutY="170.0" prefWidth="200.0" />
+        <TextField layoutX="319.0" layoutY="178.0" prefWidth="131.0" />
+        <TextField layoutX="55.0" layoutY="213.0" prefWidth="200.0" />
+        <TextField layoutX="55.0" layoutY="251.0" prefWidth="200.0" />
+        <RadioButton layoutX="59.0" layoutY="290.0" mnemonicParsing="false" text="Masculino" />
+        <RadioButton layoutX="153.0" layoutY="290.0" mnemonicParsing="false" text="Feminino" />
+        <TextField layoutX="61.0" layoutY="321.0" prefWidth="200.0" />
+        <TextField layoutX="107.0" layoutY="350.0" prefWidth="200.0" />
+        <TextField layoutX="173.0" layoutY="380.0" prefWidth="200.0" />
+        <TextField layoutX="70.0" layoutY="411.0" prefWidth="200.0" />
+        <ComboBox layoutX="107.0" layoutY="443.0" prefHeight="21.0" prefWidth="72.9998779296875">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

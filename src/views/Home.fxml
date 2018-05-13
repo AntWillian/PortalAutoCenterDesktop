@@ -25,7 +25,7 @@
       </Pane>
       <Pane layoutY="100.0" prefHeight="800.0" prefWidth="239.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
          <children>
-            <Pane fx:id="mneuFuncionarios" layoutX="8.0" layoutY="14.0" prefHeight="37.0" prefWidth="222.0" style="-fx-background-color: #272828;">
+            <Pane fx:id="menuFuncionarios" layoutX="8.0" layoutY="14.0" prefHeight="37.0" prefWidth="222.0" style="-fx-background-color: #272828;">
                <children>
                   <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" textAlignment="CENTER">
                      <font>
@@ -57,3 +57,5 @@
       <BorderPane layoutX="239.0" layoutY="100.0" prefHeight="800.0" prefWidth="661.0" style="-fx-background-color: #daccad;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
    </children>
 </AnchorPane>
+
+

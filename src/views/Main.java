@@ -2,6 +2,7 @@ package views;
 
 
 import controller.controller_Usuario;
+import controller.controller_home;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -91,6 +92,7 @@ public class Main extends Application {
 
 
 
+
 	@FXML public void Entrar() {
 
 
@@ -106,7 +108,8 @@ public class Main extends Application {
 		user_class.loginUser(nomeUser, senha);
 
 		if(user_class.loginUser(nomeUser, senha)){
-			abrirTela("Home");
+			controller_home controller = new controller_home();
+			abrirTela("Home",controller);
 		}else{
 			System.out.println("nao Logado");
 		}

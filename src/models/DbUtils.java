@@ -7,10 +7,10 @@ import java.sql.DriverManager;
 
 		static Connection con = null;
 
-		private static String host ="10.107.144.17";
+		private static String host ="localhost";
 		private static String user ="root";
 		private static String password ="bcd127";
-		private static String dbName ="db_portal";
+		private static String dbName ="dbportal";
 
 		public static Connection getConnection(){
 
