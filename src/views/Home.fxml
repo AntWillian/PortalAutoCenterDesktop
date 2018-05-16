@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
@@ -8,54 +11,89 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="900.0" minWidth="900.0" prefHeight="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane minHeight="443.0" minWidth="900.0" prefHeight="603.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.HomeController">
    <children>
-      <Pane minHeight="100.0" minWidth="900.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="79.0" fitWidth="76.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" focusTraversable="true" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/logos/logo9.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" layoutX="780.0" layoutY="50.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="69.0" style="-fx-position-shape: absolute;" text="Sair" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Text fill="#fcfcfc" layoutX="762.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #fff;" text="Frederico silva " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="79.0" fitWidth="76.0" layoutX="892.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagens/blue.jpg" />
                </image>
-               <rotationAxis>
-                  <Point3D z="200.0" />
-               </rotationAxis>
             </ImageView>
-            <Button layoutX="817.0" layoutY="50.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="69.0" style="-fx-position-shape: absolute;" text="Sair" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" />
          </children>
       </Pane>
-      <Pane layoutY="100.0" prefHeight="800.0" prefWidth="239.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
-         <children>
-            <Pane fx:id="menuFuncionarios" layoutX="8.0" layoutY="14.0" prefHeight="37.0" prefWidth="222.0" style="-fx-background-color: #272828;">
+      <BorderPane fx:id="borderPane" layoutY="100.0" prefHeight="503.0" prefWidth="982.0" style="-fx-background-color: #daccad;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <left>
+            <VBox prefHeight="800.0" prefWidth="191.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" textAlignment="CENTER">
+                  <Button mnemonicParsing="false" onMouseClicked="#ui1" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #404040; -fx-text-fill: #f0f0f0;" text="Funcionarios">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                      <font>
-                        <Font name="Andalus" size="24.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
-                  </Text>
-               </children>
-            </Pane>
-            <Pane fx:id="MenuPrestadoras" layoutX="8.0" layoutY="54.0" prefHeight="37.0" prefWidth="222.0" style="-fx-background-color: #272828;">
-               <children>
-                  <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prestadoras" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/necktie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#ui2" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #404040; -fx-text-fill: #f0f0f0;" text="Prestadoras">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                      <font>
-                        <Font name="Andalus" size="24.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
-                  </Text>
-               </children>
-            </Pane>
-            <Pane fx:id="MenuPrestadoras1" layoutX="9.0" layoutY="94.0" prefHeight="37.0" prefWidth="222.0" style="-fx-background-color: #272828;">
-               <children>
-                  <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Financeiro" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/settings-gears.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#ui3" prefHeight="40.0" prefWidth="205.0" style="-fx-background-color: #404040; -fx-text-fill: #f0f0f0;" text="Financeiro">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                      <font>
-                        <Font name="Andalus" size="24.0" />
+                        <Font name="System Bold Italic" size="20.0" />
                      </font>
-                  </Text>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/presentation1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
-            </Pane>
-         </children>
-      </Pane>
-      <BorderPane layoutX="239.0" layoutY="100.0" prefHeight="800.0" prefWidth="661.0" style="-fx-background-color: #daccad;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+            </VBox>
+         </left></BorderPane>
    </children>
 </AnchorPane>
-
-

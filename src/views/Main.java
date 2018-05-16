@@ -1,6 +1,8 @@
 package views;
 
 
+import java.io.IOException;
+
 import controller.controller_Usuario;
 import controller.controller_home;
 import javafx.application.Application;
@@ -61,7 +63,7 @@ public class Main extends Application {
 		}
 	}
 
-	public static void abrirTela(String fileName, Object controller){
+	public static void abrirTela2(String fileName){
 		//Abrir tela:
 		Parent tela;
 
@@ -70,7 +72,7 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(Main.class.getResource(fileName+".fxml"));
 
 			//definindo controller
-			loader.setController(controller);
+			//loader.setController(controller);
 
 			//carregar o arquivo XML
 			tela = loader.load();
@@ -108,8 +110,30 @@ public class Main extends Application {
 		user_class.loginUser(nomeUser, senha);
 
 		if(user_class.loginUser(nomeUser, senha)){
-			controller_home controller = new controller_home();
-			abrirTela("Home",controller);
+			//HomeController controller = new HomeController();
+			//abrirTela2("Home");
+			Parent abrirTela = null;
+
+
+			try {
+				Parent loader = FXMLLoader.load(getClass().getResource("Home.fxml"));
+
+				//carregar o arquivo XML
+				//abrirTela = loader.load();
+
+
+				//Criando a cena
+				Scene sc = new Scene(loader);
+
+				//Exibindo a cena no stage principal
+				primaryStage.setScene(sc);
+				primaryStage.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			//borderPane.setCenter(abrirTela);
 		}else{
 			System.out.println("nao Logado");
 		}

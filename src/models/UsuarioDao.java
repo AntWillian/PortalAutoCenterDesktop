@@ -94,14 +94,14 @@ public class UsuarioDao {
 				u.setCargo(rs.getString("cargo"));
 				u.setSetor(rs.getString("setor"));
 				u.setDtAdimissao(rs.getString("dtAdimissao"));
-				u.setIdEnderecoFuncionario(rs.getInt("idEnderecoFuncionario"));
+
 				u.setIdNivelAcesso(rs.getInt("idNivelAcesso"));
-				u.setIdNivelAcesso(rs.getInt("numCarteiraTrabalho"));
+				u.setNumCarteiraTrabalho(rs.getString("numCarteiraTrabalho"));
 				u.setTelefone(rs.getString("telefone"));
 				u.setAtivo(rs.getInt("ativo"));
 
 
-
+				System.out.println(u.getNome());
 
 
 
@@ -158,6 +158,62 @@ public class UsuarioDao {
 		}
 
 		return usuario;
+	}
+
+	public void inserir(Usuario...funcionario){
+		for (Usuario u : funcionario) {
+
+			String sql = "INSERT INTO tbl_funcionario set  "
+					+ "nome =?, "
+					+ " senha = ? ,"
+					+ "usuario = ?,"
+					+ "cpf = ?, "
+					+ "salario = ?, "
+					+ "dtNasc = ?, "
+					+ "sexo = ?, "
+					+ "cargo = ?, "
+					+ "setor = ?, "
+					+ "dtAdimissao = ?, "
+					+ "idNivelAcesso = ?, "
+					+ "numCarteiraTrabalho = ?, "
+					+ "telefone = ?, "
+					+ "ativo = ? ;";
+
+
+			try{
+				PreparedStatement ps = con.prepareStatement(sql);
+				ps.setString(1, u.getNome());
+				ps.setString(2, u.getSenha());
+				ps.setString(3, u.getUsuario());
+				ps.setString(4, u.getCpf());
+				ps.setFloat(5, u.getSalario());
+				ps.setString(6, u.getDtNasc());
+				ps.setString(7, u.getSexo());
+				ps.setString(8, u.getCargo());
+				ps.setString(9, u.getSetor());
+				ps.setString(10, u.getDtAdimissao());
+				ps.setInt(11, u.getIdNivelAcesso());
+				ps.setString(12, u.getNumCarteiraTrabalho());
+				ps.setString(13, u.getTelefone());
+				ps.setInt(14, u.getAtivo());
+
+
+				int rowsInserted = ps.executeUpdate();
+				if (rowsInserted > 0) {
+				    System.out.println("Inserido com sucesso");
+				}
+			}catch(Exception ex){
+				ex.printStackTrace();
+			}
+
+
+
+
+
+
+
+
+		}
 	}
 
 
